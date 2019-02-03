@@ -3,11 +3,85 @@
 body {
   font-family: 'Raleway', sans-serif;
   height: 100vh;
-  background: #333 url('showcase2.jpeg') no-repeat center center / cover;
+  background: #333 url('/imgs/showcase2.jpeg') no-repeat center center / cover;
   color: #ccc;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
+/* Nav bar */
+
+.navbar {
+  left: 0;
+  top: 0;
+  background-color: #192231;
+  overflow: hidden;
+  height: 40px;
+  text-align: right;
+}
+
+.navbar li {
+  display: inline-block;
+  font-weight: 650;
+}
+
+.navbar a{
+  color: #985e6d;
+  text-align: center;
+  padding: 2px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 8px;
+}
+
+.navbar ul {
+  margin: 10px 0 8px 0;
+  list-style: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  max-width: 170px;
+}
+
+.side-menu a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #98878f;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  color: #fff;
+}
+
+.side-menu .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Showcase */
 .container {
   display: flex;
   flex-direction: column;
@@ -27,12 +101,12 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #aaa#
+  color: #ccc;
 }
 
 /* Cursor */
 .txt-type > .txt {
-  border-right: 0.2rem solid #777
+  border-right: 0.2rem solid #98878f;
 }
 
 @media(min-width: 1200px){
@@ -46,17 +120,31 @@ h2 {
     font-size: 3rem;
   }
 
+  h2 {
+    color: #fff;
+    font-weight: 550;
+  }
+
   .container {
     padding: 0 1rem;
   }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 568px) {
   h1 {
     font-size: 2.5rem;
   }
+  .navbar-nav {
+  display: none;
+}
 
   h2 {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 568px) {
+  .open-slide {
+    display: none;
   }
 }
