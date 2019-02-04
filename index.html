@@ -22,29 +22,41 @@
       </span>
 
         <ul class="navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#showcase">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-
     </nav>
 
     <div id="side-menu" class="side-menu">
       <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
-      <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#showcase">Home</a>
+      <a href="#about">About</a>
       <a href="#">Services</a>
       <a href="#">Contact</a>
     </div>
 
 <!-- main showcase -->
-  <div class="container">
+  <div class="container" id="showcase">
     <h1>Daniel Boffey -
       <span class="txt-type" data-wait="3000" data-words='["Developer", "Creator", "Designer", "Innovator"]'></span>
     </h1>
     <h2>Freelance Web Developer and Designer</h2>
   </div>
+
+  <!-- About me section -->
+  <section id="about">
+    <div class="container-about">
+      <div class="image">
+        <img src="/imgs/me.jpg" height="330px" width="330px" alt="Me">
+      </div>
+      <div class="blurb">
+        <h3>My name is Daniel Boffey and I am a web developer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum numquam ipsam ea tempora illum omnis porro sequi maiores inventore accusantium voluptates quisquam velit incidunt cum explicabo, amet similique tempore, dolor nemo assumenda temporibus eaque. Placeat aspernatur dolorum, rerum. Nam consequatur temporibus totam veritatis vel quae.</p>
+      </div>
+    </div>
+  </section>
 
 
 
