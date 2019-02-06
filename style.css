@@ -3,7 +3,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   height: 100vh;
-  background: #333 url('/imgs/showcase2.jpeg') no-repeat center center / cover;
+  background: #333 url('imgs/showcase2.jpeg') no-repeat center center / cover;
   color: #ccc;
   /* overflow: hidden; */
   margin: 0;
@@ -21,6 +21,7 @@ body {
   text-align: right;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .navbar li {
@@ -114,6 +115,7 @@ h2 {
 /* about section */
 .container-about {
   background: #ccc;
+  height: 500px;
   display: flex;
 }
 
@@ -122,6 +124,7 @@ h2 {
   justify-content: center;
   text-align: center;
   transform: rotate(270deg);
+  margin-left: 80px;
 }
 
 .container-about img {
@@ -129,11 +132,13 @@ h2 {
 }
 
 .container-about .blurb {
+  /* display: run-in; */
+  margin-top: 20%;
   height: 100%;
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding-right: 15px;
+  margin-right: 20px;
   color: #985e6d;
 }
 
@@ -145,6 +150,21 @@ h2 {
   font-size: 1.2rem;
 }
 
+/* Portfolio */
+.top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pen-link a img{
+  width: 100%;
+  height: 100%;
+}
 
 @media(min-width: 1200px){
   h1 {
