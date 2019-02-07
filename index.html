@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>Daniel Boffey Web Developer/Designer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Daniel Boffey Web Developer</title>
 </head>
 <body>
   <!-- Nav bar -->
@@ -20,25 +21,27 @@
           </svg>
         </a>
       </span>
-
+        <!-- Main nav bar -->
         <ul class="navbar-nav">
           <li><a href="#showcase">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- Side bar on small screens -->
     <div id="side-menu" class="side-menu">
       <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
       <a href="#showcase">Home</a>
       <a href="#about">About</a>
-      <a href="#">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
       <a href="#">Contact</a>
     </div>
 
-<!-- main showcase -->
+<!-- Main showcase -->
   <div class="container" id="showcase">
     <h1>Daniel Boffey -
       <span class="txt-type" data-wait="3000" data-words='["Developer", "Creator", "Designer", "Innovator"]'></span>
@@ -59,7 +62,7 @@
     </div>
   </section>
 
-  <!-- my work portfolio section -->
+  <!-- My work portfolio section -->
   <section id="portfolio">
     <div class="top">
       <div class="pen-link">
@@ -81,6 +84,45 @@
       </div>
       <div class="pen-link">
         <a href="https://codepen.io/Dannyboy170789/full/LqzbVB" target="_blank"><img src="imgs/parallaxsite.png" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container-services grid-3 center">
+      <div class="skills">
+        <i class="fas fa-code fa-3x"></i>
+        <h3>Front-End Development</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3, SCSS and SASS</li>
+          <li>Bootstrap 4</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>GIT</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <i class="fas fa-terminal fa-3x"></i>
+        <h3>Back-End Development</h3>
+        <ul>
+          <li>Python</li>
+          <li>MongoDB</li>
+          <li>NodeJS</li>
+          <li>Express</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <i class="fas fa-user-tie fa-3x"></i>
+        <h3>Marketing</h3>
+        <ul>
+          <li>UI & UX Design</li>
+          <li>Animations</li>
+          <li>SEO Optimization</li>
+          <li>Color Design & Typography</li>
+          <li>Project Deployment To Server</li>
+        </ul>
       </div>
     </div>
   </section>
