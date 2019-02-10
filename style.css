@@ -8,7 +8,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   height: 100vh;
-  background: rgb(25,34,49) url('imgs/showcase4.jpeg') no-repeat center center / cover;
+  background: rgb(25,34,49);
   color: #fff;
   margin: 0;
   padding: 0;
@@ -99,9 +99,13 @@ hr {
   justify-content: center;
   height: 100vh;
   padding: 0 3rem;
+  opacity: 0.85;
+  background: url('imgs/showcase4.jpeg') no-repeat center center / cover;
 }
 
-h1 , h2 {
+.container h1 , h2 {
+  color: #fff;
+  /* opacity: 0.9; */
   font-weight: 200;
   margin: 0.4rem;
 }
@@ -111,8 +115,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  color: #ccc;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 /* Cursor */
