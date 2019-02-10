@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Nav bar -->
-  <nav class="navbar">
+  <nav class="navbar cf">
       <!--Hamburger dropdown icon using SVG(simple vector graphics-->
       <span class="open-slide">
         <a href="#" onclick="openSlideMenu()">
@@ -22,7 +22,7 @@
         </a>
       </span>
         <!-- Main nav bar -->
-        <ul class="navbar-nav">
+        <ul class="navbar-nav cf">
           <li><a href="#showcase">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -89,8 +89,9 @@
   </section>
 
   <!-- Services -->
-  <section id="services">
-    <div class="container-services grid-3 center">
+  <section class="container-services" id="services">
+    <h2>My Skills</h2>
+    <div class="grid-3 center">
       <div class="skills">
         <i class="fas fa-code fa-3x"></i>
         <h3>Front-End Development</h3>
@@ -121,16 +122,106 @@
     </div>
   </section>
 
-  <!-- Contact me & Social media  -->
-  <section id="conatct">
-    <div class="container-contact">
+  <hr>
 
+  <!-- Contact me & Social media  -->
+  <section id="contact">
+    <div class="container-contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-details">
+        <div class="email">
+          <i class="far fa-envelope fa-2x"></i><p>dboffey70@googlemail.com</p>
+        </div>
+        <div class="tel">
+          <i class="fas fa-mobile-alt fa-2x"></i>
+          <p>07984932911</p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Accodion for social media -->
+    <div class="soc-follow">
+      <h2>Follow Me On Social Media</h2>
+    </div>
+    <div class="soc-links">
+      <ul class="accordion">
+        <li class="tab">
+          <div class="social youtube">
+            <a href="https://www.youtube.com/channel/UC7YgDapdy9xH4bkIRe5OIaA?view_as=subscriber" target="_blank">Youtube</a>
+          </div>
+          <div class="content">
+            <h1>Youtube</h1>
+            <p>Follow me on Youtube for the latest gameplay videos for Xbox, Playstation and Nintendo!</p>
+          </div>
+        </li>
+
+        <li class="tab">
+          <div class="social twitter">
+            <a href="https://twitter.com/Wrathofthe_Geek?lang=en-gb" target="_blank">Twitter</a>
+          </div>
+          <div class="content">
+            <h1>Twitter</h1>
+            <p>Follow me on Twitter for the latest game stories for Xbox, Playstation and Nintendo!</p>
+          </div>
+        </li>
+
+        <li class="tab">
+          <div class="social facebook">
+            <a href="https://www.facebook.com/daniel.boffey.7" target="_blank">Facebook</a>
+          </div>
+          <div class="content">
+            <h1>Facebook</h1>
+            <p>Add me on Facebook and keep up to date with all my videos and stories!</p>
+          </div>
+        </li>
+
+        <li class="tab">
+          <div class="social linkedin">
+            <a href="https://www.linkedin.com/in/daniel-boffey-3a76b76a/" target="_blank">Linkedin</a>
+          </div>
+          <div class="content">
+            <h1>Linkedin</h1>
+            <p>Add me to your network on Linkedin and lets see if we can work together!</p>
+          </div>
+        </li>
+
+        <li class="tab">
+          <div class="social github">
+            <a href="https://github.com/Dannyboy1707?tab=stars" target="_blank">Github</a>
+          </div>
+          <div class="content">
+            <h1>Github</h1>
+            <p>Checkout my latest projects on Github</p>
+          </div>
+        </li>
+
+        <li class="tab">
+          <div class="social instagram">
+            <a href="https://www.instagram.com/dannyboy170789/" target="_blank">Instagram</a>
+          </div>
+          <div class="content">
+            <h1>Instagram</h1>
+            <p>Follow my Instagram and keep up with me and my ongoing life as a developer!</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
   <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>Copyright &copy; <span id="year"></span>
+       Daniel Boffey</p>
+    </div>
+  </footer>
 
-
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   <script src="app.js">
   </script>
 </body>
