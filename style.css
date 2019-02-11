@@ -12,6 +12,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 hr {
@@ -75,13 +76,13 @@ hr {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
   font-size: 22px;
-  color: #98878f;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
 
 .side-menu a:hover {
-  color: #fff;
+  color: #000;
 }
 
 .side-menu .btn-close {
@@ -90,6 +91,10 @@ hr {
   right: 22px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.open-slide {
+  display: none;
 }
 
 /* Showcase */
@@ -484,44 +489,9 @@ footer {
   font-size: 1.2rem;
 }
 
-
-@media(min-width: 1200px){
-  h1 {
-    font-size: 5rem;
-  }
-}
-
-@media(max-width: 800px) {
-  h1{
-    font-size: 3rem;
-  }
-
-  h2 {
-    color: #fff;
-    font-weight: 550;
-  }
-
-  .container {
-    padding: 0 1rem;
-  }
-}
-
-
-
+/* Media queries */
 @media(max-width: 568px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  .navbar-nav {
-  display: none;
-}
 
-  h2 {
-    font-size: 1.5rem;
-  }
-  .container-about {
-    margin-top: -40px;
-  }
 }
 
 @media (min-width: 568px) {
@@ -531,4 +501,200 @@ footer {
   .container-about {
     margin-top: -40px;
   }
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    height: 400px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-nav {
+  /* display: none; */
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  .container-about {
+    height: 310px;
+    margin-top: 15px;
+    margin-left: -30px;
+  }
+  .image img {
+    height: 220px;
+    width: 220px;
+  }
+  .container-about .blurb {
+    margin-top: 5%;
+  }
+  .container-about .blurb h3 {
+    font-size: 1.2rem;
+  }
+  .container-about .blurb p {
+    font-size: 1rem;
+  }
+  .container-services {
+    height: 410px;
+    padding: 1rem .8rem;
+  }
+  .container-services h2 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+  .container-services .skills h3  {
+    font-size: 1.1rem;
+  }
+  .container-services .skills span {
+    font-size: .9rem;
+  }
+  .container-contact {
+    height: 120px;
+  }
+  .container-contact .contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .container-contact h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .container-contact p {
+    font-size: 1.1rem;
+  }
+  .soc-links {
+    width: 70%;
+  }
+  .tab {
+    display: block;
+    width: 100%;
+    border-bottom: 3px #333 solid;
+  }
+  .accordion {
+    display: block;
+    min-width: 450px;
+    height: auto;
+  }
+  .tab .content {
+    width: 85%;
+  }
+  .tab:hover {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .open-slide {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .open-slide i:hover {
+    color: #ccc;
+  }
+  .open-slide i {
+    color: #fff;
+
+  }
+  .container {
+    height: 380px;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+  nav {
+  display: none;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+  .container-about {
+    height: 460px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 250px;
+    width: 250px;
+  }
+  .container-about .blurb {
+    margin: 0;
+    padding: 0;
+    margin-top: 1%;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+  }
+  .container-about .blurb h3 {
+    font-size: 1rem;
+  }
+  .container-about .blurb p {
+    font-size: .9rem;
+  }
+  .container-services {
+    height: 410px;
+    padding: .8rem .6rem;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .container-services h2 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  .container-services .skills h3  {
+    font-size: 1rem;
+  }
+  .container-services .skills span {
+    font-size: .8rem;
+  }
+  .container-contact {
+    height: 120px;
+  }
+  .container-contact .contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .container-contact h2 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+  .container-contact p {
+    font-size: .9rem;
+    margin-right: 8px;
+  }
+  .container-contact i {
+    margin-right: 6px;
+  }
+  .soc-follow {
+    margin-top: 30px;
+  }
+  .soc-links {
+    width: 85%;
+  }
+  .accordion {
+    width: 100%;
+    min-width: 100px;
+    max-width: 300px;
+  }
+  .accordion p {
+    display: none;
+  }
+
 }
