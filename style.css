@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 @font-face {
   font-family: 'Genericons';
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   height: 100vh;
   background: rgb(25,34,49);
   color: #fff;
@@ -31,6 +31,11 @@ hr {
   width: 100%;
   z-index: 2;
   opacity: 0.9;
+}
+
+.open-slide span i {
+  z-index: 2;
+  color: #fff;
 }
 
 .navbar li {
@@ -105,23 +110,23 @@ hr {
   height: 100vh;
   padding: 0 3rem;
   opacity: 0.85;
-  background: url('imgs/showcase4.jpeg') no-repeat center center / cover;
+  background: url('imgs/bg3.jpeg') no-repeat center center / cover;
 }
 
 .container h1 , h2 {
   color: #fff;
-  /* opacity: 0.9; */
-  font-weight: 200;
+  font-weight: 300;
   margin: 0.4rem;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.9rem;
   font-weight: 500;
+  font-style: italic;
 }
 
 /* Cursor */
@@ -585,32 +590,36 @@ footer {
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 560px) {
   body {
     margin: 0;
     padding: 0;
   }
-  .open-slide {
+  /* .open-slide {
     display: block;
     position: fixed;
     z-index: 1;
     margin-left: 10px;
     margin-top: 10px;
+    color: #fff;
+  } */
+  nav {
+    display: none;
   }
-  .open-slide i:hover {
+  /* .open-slide i:hover {
     color: #ccc;
   }
   .open-slide i {
     color: #fff;
 
-  }
+  } */
   .container {
     height: 380px;
   }
   h1 {
     font-size: 2.3rem;
   }
-  nav {
+  nav .navbar-nav {
   display: none;
   }
 
